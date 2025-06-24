@@ -1,7 +1,7 @@
 package br.edu.ufscar.backend.mealsfinder.models;
 
 import br.edu.ufscar.backend.mealsfinder.models.enums.FoodTypesEnum;
-import br.edu.ufscar.backend.mealsfinder.framework.retentions.Entity;
+// import br.edu.ufscar.backend.mealsfinder.framework.retentions.Entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,7 +11,7 @@ import lombok.AllArgsConstructor;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity(tableName = "clients")
+@Entity
 @Table(name = "clients")
 @DiscriminatorValue("CLIENT")
 @Getter

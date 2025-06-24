@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Test" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="br.edu.ufscar.backend.mealsfinder.MealsFinderApplication" />
+    <module name="mealsfinder" />
+    <option name="PROGRAM_PARAMETERS" value="--debug" />
+    <option name="VM_PARAMETERS" value="--enable-native-access=ALL-UNNAMED" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

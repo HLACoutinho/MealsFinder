@@ -12,7 +12,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-class Address {
+public class Address {
     @Column(name = "cep")
     private String cep;
     @Column(name = "city")

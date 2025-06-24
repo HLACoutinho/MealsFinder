@@ -48,7 +48,7 @@ public class Establishment extends User {
     @OneToMany(mappedBy = "establishment", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Image> images = new HashSet<>();
 
-    @OneToMany(mappedBy = "reviewedPost", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "establishment", cascade = CascadeType.ALL, orphanRemoval = true) // <-- Updated mappedBy
     private Set<Review> receivedReviews = new HashSet<>();
 
     public Establishment(String email, String username, String password, String cnpj, EstablishmentTypesEnum establishmentType) {

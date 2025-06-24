@@ -40,11 +40,16 @@ public class Review extends Post {
     @JoinColumn(name = "reviewed_post_id")
     private Post reviewedPost;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "establishment_id", nullable = false)
+    private Establishment establishment;
+
     public Review(User creator, String text, String description, Double price, Double rating, boolean isDelivery) {
         super(creator, text, description);
         this.price = price;
         this.rating = rating;
         this.isDelivery = isDelivery;
+        this.establishment = establishment;
     }
 
     @Override
